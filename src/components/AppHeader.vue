@@ -5,9 +5,7 @@ import AppHeaderTop from './AppHeaderTop.vue';
 export default {
   data() {
     return { 
-      listNameNav: [
-        'Menu'
-      ]
+     
     }
   },
    components: {
