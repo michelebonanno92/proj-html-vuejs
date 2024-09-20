@@ -1,7 +1,4 @@
 <script>
-import AppHeaderTop from './AppHeaderTop.vue';
-
-
 export default {
   data() {
     return { 
@@ -9,16 +6,22 @@ export default {
         'Menu'
       ]
     }
-  },
-   components: {
-    AppHeaderTop
-  },
+  }
 }
 </script>
 
 <template>
   <header>
-    <AppHeaderTop />
+    <nav class="d-flex justify-content-between col-12">
+      <div>
+        English 
+        <select name="" id="">
+        </select>
+      </div>
+      <ul>
+        <li></li>
+      </ul>
+    </nav>
   </header>
 </template>
 
