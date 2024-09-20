@@ -1,5 +1,7 @@
 <script>
 import AppHeaderTop from './AppHeaderTop.vue';
+import AppHeaderBottom from './AppHeaderBottom.vue';
+
 
 
 export default {
@@ -9,7 +11,8 @@ export default {
     }
   },
    components: {
-    AppHeaderTop
+    AppHeaderTop,
+    AppHeaderBottom,
   },
 }
 </script>
@@ -17,6 +20,8 @@ export default {
 <template>
   <header>
     <AppHeaderTop />
+    <AppHeaderBottom />
+
   </header>
 </template>
 
