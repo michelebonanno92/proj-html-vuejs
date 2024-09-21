@@ -11,26 +11,47 @@ export default {
 
 <template>
     <div class="container-xxl">
-      <nav class="d-flex align-items-center">
+      <nav class="d-flex align-items-center justify-content-beetween">
+        <!-- logo -->
         <div>
-          <img src="/public/img/logo.png" alt="logo" class="me-4">
+          <img src="/img/logo.png" alt="logo" class="me-4">
         </div>
-        <div class="d-flex">
-          <button type="button" class="me-2">
-            <i class="fa-solid fa-bars"></i>
-            CATEGORY
-          </button>
-          <div class="d-flex justify-content-center">
-            <input type="text" placeholder="Search courses">
-            <span type="button" class="searchBlue">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </span>
+
+        <!-- search bar + category -->
+        <div>
+          <div class="d-flex">
+
+            <button type="button">
+              <i class="fa-solid fa-bars "></i>
+              CATEGORY
+            </button>
+
+            <div class="d-flex">
+              <input type="text" placeholder="Search courses">
+              <span type="button" class="searchBlue">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </span>
+            </div>
+
           </div>
-           
-         
         </div>
-        <div>
+        <!-- link -->
+        <div class="d-flex justify-content-between align-items-center">
+          <a href="#">
+            <i class="bi bi-megaphone"></i>
+            <span>Become an Instructor</span> 
+          </a>
+          <a href="#">
+            <i class="bi bi-briefcase"></i>
+            <span>For Enterprise</span>
+          </a>
+        </div>
           
+        <div>
+          <a href="#">
+            <i class="bi bi-person"></i>
+            <span> Log in</span>
+          </a>
         </div>
       </nav>
     </div>
@@ -39,6 +60,13 @@ export default {
 <style lang="scss" scoped>
 @use '../assets/scss/partials/variables' as *;
     nav{
+      a{
+        text-decoration: none;
+        font-size: 0.7rem;
+      }
+      a > span{
+        margin-left: 5px;
+      }
       img{
         max-width: 200px;
       }
@@ -61,7 +89,6 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
-
       }
     }
 
