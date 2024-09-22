@@ -1,6 +1,9 @@
 <script>
 
 import AppHeader from './components/AppHeader.vue';
+import AppMain from './components/AppMain.vue';
+
+
 
 
 export default {
@@ -11,7 +14,9 @@ export default {
   },
  
   components: {
-    AppHeader
+    AppHeader,
+    AppMain,
+
   },
   methods: {
    
@@ -20,14 +25,8 @@ export default {
 </script>
 
 <template>
-  <div>
-  
     <AppHeader />
-    
-    <main>
-    
-    </main>
-  </div>
+    <AppMain />
 </template>
 
 <style lang="scss">
