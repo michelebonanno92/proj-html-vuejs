@@ -30,17 +30,16 @@ export default {
   <div class="container-xxl  size ">
     <nav class="d-flex align-items-center justify-content-between ">
 
-      <div class="d-flex  ">
+      <div >
         <ul>
           <li >
-            <a href="#" class=" d-flex ">
+            <a href="#" class=" d-flex " id="reset">
             English
           <select name="" id="">
           </select>
         </a>
           </li>
         </ul>
-       
       </div>
 
       <div class="d-flex align-items-center"> 
@@ -74,8 +73,12 @@ export default {
 
 <style lang="scss" scoped>
 @use '../assets/scss/partials/variables' as *;
-header {
+
+header{
   font-family: "Montserrat", sans-serif;
+  nav{
+    position: relative;
+  }
   .size{
     font-size: 0.9rem;
     margin-top: 20px;
@@ -93,7 +96,13 @@ header {
     color: black;
     opacity: 0.5;
   }
+
  
 }
+#reset{
+   position: absolute;
+   top: 0;
+   left: 0;
+  }
 
 </style>

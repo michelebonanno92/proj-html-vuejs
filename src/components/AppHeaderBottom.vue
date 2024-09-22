@@ -1,17 +1,22 @@
 <script>
+import Button from './Button.vue';
 
 export default {
   data() {
     return { 
      
     }
-  }
+  
+  },
+  components: {
+      Button ,
+    }
 }
 </script>
 
 <template>
     <div class="container-xxl">
-      <nav class="d-flex align-items-center justify-content-beetween">
+      <nav>
         <!-- logo -->
         <div>
           <img src="/img/logo.png" alt="logo" class="me-4">
@@ -37,21 +42,27 @@ export default {
         </div>
         <!-- link -->
         <div class="d-flex justify-content-between align-items-center">
-          <a href="#">
-            <i class="bi bi-megaphone"></i>
-            <span>Become an Instructor</span> 
-          </a>
-          <a href="#">
-            <i class="bi bi-briefcase"></i>
+          <div class="me-4">
+            <a href="#">
+              <i class="bi bi-megaphone"></i>
+            </a>
+            <span >Become an Instructor</span> 
+          </div>
+          <div>
+            <a href="#">
+              <i class="bi bi-briefcase"></i>
+            </a>
             <span>For Enterprise</span>
-          </a>
-        </div>
+          </div>
           
+        </div>
+          <!-- login + button -->
         <div>
           <a href="#">
             <i class="bi bi-person"></i>
             <span> Log in</span>
           </a>
+          <Button />
         </div>
       </nav>
     </div>
@@ -60,12 +71,16 @@ export default {
 <style lang="scss" scoped>
 @use '../assets/scss/partials/variables' as *;
     nav{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       a{
         text-decoration: none;
         font-size: 0.7rem;
+        margin-right: 10px;
       }
-      a > span{
-        margin-left: 5px;
+       span{
+        font-size: 0.8rem;
       }
       img{
         max-width: 200px;
