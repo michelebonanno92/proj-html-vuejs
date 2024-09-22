@@ -27,36 +27,43 @@ export default {
 </script>
 
 <template>
-  <div class="container-xxl r size">
-    <nav class="d-flex align-items-strech">
+  <div class="container-xxl  size ">
+    <nav class="d-flex align-items-center justify-content-between ">
 
-      <div class="d-flex flex-grow-1 ">
-        <a href="#" class=" d-flex  align-items-center">
-          English
+      <div class="d-flex  ">
+        <ul>
+          <li >
+            <a href="#" class=" d-flex ">
+            English
           <select name="" id="">
           </select>
         </a>
+          </li>
+        </ul>
+       
       </div>
 
-      <div >
-        <ul class="d-flex align-items-stretch">
+      <div class="d-flex align-items-center"> 
+        
+        <ul class="d-flex ">
           <li v-for="(element, i) in listNameNav" :key="i" class="me-3" >
             <a href="#">
               {{ element }} 
             </a>
           </li>
         </ul>
-      </div>
       
-      <div>
-        <ul class="d-flex align-items-stretch">
+        <ul class="d-flex ">
           <li v-for="(icon, i) in listIcons" :key="i" class="me-2" >
             <a href="#"  >
               <i :class="icon"></i>
             </a>
           </li>
         </ul>
+      
       </div>
+
+ 
       
     </nav>
   </div>
@@ -71,6 +78,7 @@ header {
   font-family: "Montserrat", sans-serif;
   .size{
     font-size: 0.9rem;
+    margin-top: 20px;
   }
   select{
     border: none;
