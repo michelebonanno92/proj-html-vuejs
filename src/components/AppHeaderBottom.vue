@@ -1,5 +1,5 @@
 <script>
-import Button from './Button.vue';
+
 
 export default {
   data() {
@@ -9,7 +9,7 @@ export default {
   
   },
   components: {
-      Button ,
+      
     }
 }
 </script>
@@ -57,12 +57,21 @@ export default {
           
         </div>
           <!-- login + button -->
-        <div>
+        <div class="d-flex align-items-center">
           <a href="#">
             <i class="bi bi-person"></i>
             <span> Log in</span>
           </a>
-          <Button />
+          <a href="#">
+            <div  class="buttonBlue">
+            SIGN UP
+          </div>
+          </a>  
+          <a href="#">
+            <i class="fa-regular fa-heart fa-2xl"></i>
+          </a>
+         
+         
         </div>
       </nav>
     </div>
@@ -104,6 +113,15 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
+      }.buttonBlue{
+        background-color: $blueColor;
+        border: none;
+        padding: 10px;
+        border-radius: 20px;
+        color: white;
+        width: 100px;
+        text-align: center;
+        font-size: 0.7rem;
       }
     }
 
