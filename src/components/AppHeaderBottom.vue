@@ -31,7 +31,7 @@ export default {
               CATEGORY
             </button>
 
-            <div class="d-flex">
+            <div class="d-flex searchw">
               <input type="text" placeholder="Search courses">
               <span type="button" class="searchBlue">
                 <i class="fa-solid fa-magnifying-glass"></i>
@@ -122,6 +122,10 @@ export default {
         width: 100px;
         text-align: center;
         font-size: 0.7rem;
+      }input{
+        width: 100%;
+      }.searchw{
+        width: 350px;
       }
     }
 
