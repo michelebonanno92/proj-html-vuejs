@@ -24,7 +24,9 @@ export default {
 
   </header>
 </template>
-
+<i class="fa-solid fa-earth-americas"></i>
+<i class="fa-solid fa-desktop"></i>
+<i class="fa-regular fa-calendar"></i>
 <style lang="scss" scoped>
 @use '../assets/scss/partials/variables' as *;
 header {
