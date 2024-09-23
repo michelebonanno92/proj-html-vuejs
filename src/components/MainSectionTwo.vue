@@ -13,51 +13,36 @@ export default {
 </script>
 
 <template>
-  <div class="container-xxl">
-
-    <div class="row g-lg-4 padding ">
-      <div class="myCol30">
-        <div class="p-3 border">
-          <div>
-            <i class="fa-solid fa-earth-americas"></i>
-          </div>
-          <p>
-            Worldwide Recognize
-          </p>
-          <p>
-            Our online course certificates can be used around the world and also in most popular universities and companies.
-          </p>
-        </div>
+  <div class="container">
+    <div class="row padding">
+      <div class="myCol30  me-4 p-4">
+        <i class="fa-solid fa-earth-americas"></i>
+        <p>
+          Worldwide Trends
+        </p>
+        <p>
+          Our services and collections adhere to cutting-edge solutions in the design world.
+        </p>
       </div>
-
-      <div class="myCol30">
-        <div class="p-3 border">
-          <div>
-            <i class="fa-solid fa-desktop"></i>
-          </div>
-          <p>
-            Mostly Online Learning (sd)
-          </p>
-          <p>
-            Masterstudy online certificates can be obtained in a range of specialized areas and typically take about a year to complete.
-          </p>
-        </div>
+      <div class="myCol30 me-4 p-4">
+        <i class="fa-solid fa-desktop"></i>
+        <p>
+          Complex Online Education
+        </p>
+        <p>
+          We have everything for effective learning and delivery of assignments by students.
+        </p>
       </div>
-
-      <div class="myCol30">
-        <div class="p-3 border">
-          <div>
-            <i class="fa-regular fa-calendar"></i>
-          </div>
-          <p>
-             Graduate in as little as 1 Year
-          </p>
-          <p>
-           Online post-graduate certificates are a popular way to develop your professional qualifications of Masterstudy.
-          </p>
-        </div>
+      <div class="myCol30 p-4">
+        <i class="fa-regular fa-calendar"></i>
+        <p>
+          Brand certificate
+        </p>
+        <p>
+          After completing the course, you will receive a certificate confirming your knowledge.
+        </p>
       </div>
-   
+      
     </div>
 
   </div>
@@ -70,7 +55,8 @@ export default {
   padding: 0 100px;
 }.myCol30{
   width: 30%;
-  height: 300px;
+  background-color: #F2F6FB;
+  
 }i{
   color: $blueColor;
   font-size: 2.5rem;
