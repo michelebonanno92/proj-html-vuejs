@@ -14,8 +14,8 @@ export default {
 
 <template>
   <div class="container">
-    <div class="row padding">
-      <div class="myCol30  me-4 p-4">
+    <div class="my-row padding">
+      <div class="myCol30  p-4">
         <i class="fa-solid fa-earth-americas"></i>
         <p>
           Worldwide Trends
@@ -24,7 +24,7 @@ export default {
           Our services and collections adhere to cutting-edge solutions in the design world.
         </p>
       </div>
-      <div class="myCol30 me-4 p-4">
+      <div class="myCol30  p-4">
         <i class="fa-solid fa-desktop"></i>
         <p>
           Complex Online Education
@@ -49,14 +49,16 @@ export default {
   
 </template>
 
+
 <style lang="scss" scoped>
 @use '../assets/scss/partials/variables' as *;
 .padding{
-  padding: 0 100px;
+  padding: 0 90px;
 }.myCol30{
-  width: 30%;
+  width: calc(30% - 20px );
   background-color: #F2F6FB;
-  border-radius: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
 }i{
   color: $blueColor;
   font-size: 2.5rem;
@@ -64,5 +66,9 @@ export default {
   margin-top: 20px;
 }.backColor{
   background-color: #F2F6FB;
+}.my-row{
+  display: flex;
+  flex-wrap: wrap;
+  width: 1100px;
 }
 </style>
