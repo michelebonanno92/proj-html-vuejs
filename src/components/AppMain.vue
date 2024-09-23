@@ -1,6 +1,8 @@
 <script>
 import MainSectionOne from './MainSectionOne.vue';
 import MainSectionTwo from './MainSectionTwo.vue';
+import MainSectionThree from './MainSectionThree.vue';
+
 
 
 
@@ -14,6 +16,7 @@ export default {
    components: {
     MainSectionOne,
     MainSectionTwo,
+    MainSectionThree,
     
   },
 }
@@ -23,6 +26,8 @@ export default {
   <header>
     <MainSectionOne />
     <MainSectionTwo />
+    <MainSectionThree />
+
 
    
 

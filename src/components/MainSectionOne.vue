@@ -13,7 +13,7 @@ export default {
 </script>
 
 <template>
-  <div class="container-xxl">
+  <div class="container">
     <div class="d-flex row padding">
 
       <div class="col-7 margin-top">

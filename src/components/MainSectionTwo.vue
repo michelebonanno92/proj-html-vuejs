@@ -56,7 +56,7 @@ export default {
 }.myCol30{
   width: 30%;
   background-color: #F2F6FB;
-  
+  border-radius: 10px;
 }i{
   color: $blueColor;
   font-size: 2.5rem;
