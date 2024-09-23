@@ -14,7 +14,7 @@ export default {
 
 <template>
   <div class="container-xxl">
-    <div class="d-flex row pW">
+    <div class="d-flex row padding">
 
       <div class="col-7 margin-top">
         <p class="h2f">
@@ -41,7 +41,7 @@ export default {
 
 <style lang="scss" scoped>
 @use '../assets/scss/partials/variables' as *;
-.pW{
+.padding{
   padding: 100px;
 }p{
   font-size: 1.4rem;
