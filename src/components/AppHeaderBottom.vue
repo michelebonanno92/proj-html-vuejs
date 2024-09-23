@@ -114,7 +114,7 @@ export default {
         justify-content: center;
         align-items: center;
       }.buttonBlue{
-        @include bottonBlue
+        @include buttonBlue
       }input{
         width: 100%;
       }.searchw{

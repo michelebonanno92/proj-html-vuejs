@@ -16,7 +16,7 @@ export default {
   <div class="container-xxl">
     <div class="d-flex row pW">
 
-      <div class="col-7 mt-5 ">
+      <div class="col-7 margin-top">
         <p class="h2f">
           Start Investing in You
         </p>
@@ -48,9 +48,11 @@ export default {
 }.h2f{
   font-size: 4rem;
 }.buttonBlue{
-  @include bottonBlue
+  @include buttonBlue
 }img{
   max-width: 100%;
+}.margin-top{
+  margin-top: 80px;
 }
 
 </style>
