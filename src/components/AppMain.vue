@@ -1,5 +1,7 @@
 <script>
 import MainSectionOne from './MainSectionOne.vue';
+import MainSectionTwo from './MainSectionTwo.vue';
+
 
 
 
@@ -11,6 +13,7 @@ export default {
   },
    components: {
     MainSectionOne,
+    MainSectionTwo,
     
   },
 }
@@ -19,6 +22,8 @@ export default {
 <template>
   <header>
     <MainSectionOne />
+    <MainSectionTwo />
+
    
 
   </header>

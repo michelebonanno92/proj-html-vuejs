@@ -7,3 +7,14 @@
 @mixin default-bg-color {
     background-color: $mainColor;
 }
+
+@mixin bottonBlue {
+    background-color: $blueColor;
+    border: none;
+    padding: 12px;
+    border-radius: 20px;
+    color: white;
+    width: 120px;
+    text-align: center;
+    font-size: 0.7rem;
+}

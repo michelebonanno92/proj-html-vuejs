@@ -13,13 +13,44 @@ export default {
 </script>
 
 <template>
-  <header>
+  <div class="container-xxl">
+    <div class="d-flex row pW">
 
+      <div class="col-7 mt-5 ">
+        <p class="h2f">
+          Start Investing in You
+        </p>
+        <p>
+          With over 1200 courses in 18 subjects, you're guaranteed to find something that's right for you.
+        </p>
+        <a href="#">
+          <div  class="buttonBlue">
+            JOIN FOR FREE
+          </div>
+         </a> 
+      </div>
 
-  </header>
+      <div class="col-5">
+        <img src="/public/img/base.png" alt="base">
+      </div>
+     
+    </div>
+  </div>
+  
 </template>
 
 <style lang="scss" scoped>
 @use '../assets/scss/partials/variables' as *;
+.pW{
+  padding: 100px;
+}p{
+  font-size: 1.4rem;
+}.h2f{
+  font-size: 4rem;
+}.buttonBlue{
+  @include bottonBlue
+}img{
+  max-width: 100%;
+}
 
 </style>

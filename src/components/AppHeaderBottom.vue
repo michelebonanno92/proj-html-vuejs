@@ -114,14 +114,7 @@ export default {
         justify-content: center;
         align-items: center;
       }.buttonBlue{
-        background-color: $blueColor;
-        border: none;
-        padding: 10px;
-        border-radius: 20px;
-        color: white;
-        width: 100px;
-        text-align: center;
-        font-size: 0.7rem;
+        @include bottonBlue
       }input{
         width: 100%;
       }.searchw{
