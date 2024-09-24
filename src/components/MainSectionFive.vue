@@ -16,12 +16,34 @@ export default {
 
       cards: [
         {
+            image : '/public/img/1.jpg',
+            preTitle: ' Software Development' ,
+            title: 'Basics of Masterstudy Education Theme',
+            textLeftOne: 'fa-solid fa-star',
+            textLeftTwo: '1',
+            textRight: 'Free' ,
+        },
+        {
+            image : '/public/img/2.jpg',
+            preTitle: ' Art' ,
+            title: 'Real Things Art Painting by Jason Ni',
+            textLeftOne:  'fa-solid fa-star' ,
+            textLeftTwo: '1',
+            textRight: '$45.99' ,
+        },
+        {
+            image : '/public/img/3.jpg',
+            preTitle: ' Art' ,
+            title: 'Minimalism, How to make things simpler',
+            textLeftOne: ' fa-regular fa-clock ',
+            textLeftTwo: '5 hours',
+            textRight: '$39.99' ,
+        },
+        {
             image : '/public/img/1photo-1461749280684-dccba630e2f6-272x161.jpeg',
             preTitle: ' Apache' ,
             title: 'Web coding and Apache Basics',
-            textLeftOne: [
-                ' fa-regular fa-clock ',
-            ],
+            textLeftOne: ' fa-regular fa-clock ',
             textLeftTwo: '6 hours',
             textRight: 'Free' ,
         },
@@ -29,30 +51,69 @@ export default {
             image : '/public/img/1photo-1461749280684-dccba630e2f6-272x161.jpeg',
             preTitle: ' Apache' ,
             title: 'Web coding and Apache Basics',
-            textLeftOne: [
-                'fa-solid fa-star',
-                'fa-solid fa-star',
-                'fa-solid fa-star',
-                'fa-solid fa-star',
-                'fa-solid fa-star',
-            ],
-            textLeftTwo: '5',
+            textLeftOne: ' fa-regular fa-clock ',
+            textLeftTwo: '6 hours',
             textRight: 'Free' ,
         },
         {
             image : '/public/img/1photo-1461749280684-dccba630e2f6-272x161.jpeg',
             preTitle: ' Apache' ,
             title: 'Web coding and Apache Basics',
-            textLeftOne: [
-                ' fa-regular fa-clock ',
-            ],
+            textLeftOne: ' fa-regular fa-clock ',
+            textLeftTwo: '6 hours',
+            textRight: 'Free' ,
+        },
+        {
+            image : '/public/img/1photo-1461749280684-dccba630e2f6-272x161.jpeg',
+            preTitle: ' Apache' ,
+            title: 'Web coding and Apache Basics',
+            textLeftOne: ' fa-regular fa-clock ',
+            textLeftTwo: '6 hours',
+            textRight: 'Free' ,
+        },
+        {
+            image : '/public/img/1photo-1461749280684-dccba630e2f6-272x161.jpeg',
+            preTitle: ' Apache' ,
+            title: 'Web coding and Apache Basics',
+            textLeftOne: ' fa-regular fa-clock ',
+            textLeftTwo: '6 hours',
+            textRight: 'Free' ,
+        },
+        {
+            image : '/public/img/1photo-1461749280684-dccba630e2f6-272x161.jpeg',
+            preTitle: ' Apache' ,
+            title: 'Web coding and Apache Basics',
+            textLeftOne: ' fa-regular fa-clock ',
+            textLeftTwo: '6 hours',
+            textRight: 'Free' ,
+        },
+        {
+            image : '/public/img/1photo-1461749280684-dccba630e2f6-272x161.jpeg',
+            preTitle: ' Apache' ,
+            title: 'Web coding and Apache Basics',
+            textLeftOne: ' fa-regular fa-clock ',
+            textLeftTwo: '6 hours',
+            textRight: 'Free' ,
+        },
+        {
+            image : '/public/img/1photo-1461749280684-dccba630e2f6-272x161.jpeg',
+            preTitle: ' Apache' ,
+            title: 'Web coding and Apache Basics',
+            textLeftOne: ' fa-regular fa-clock ',
+            textLeftTwo: '6 hours',
+            textRight: 'Free' ,
+        },
+        {
+            image : '/public/img/1photo-1461749280684-dccba630e2f6-272x161.jpeg',
+            preTitle: ' Apache' ,
+            title: 'Web coding and Apache Basics',
+            textLeftOne: ' fa-regular fa-clock ',
             textLeftTwo: '6 hours',
             textRight: 'Free' ,
         },
         
-        
-        ],
-        
+    
+    ],
 
       
     }
@@ -76,7 +137,7 @@ export default {
           </li>
         </ul>
         <div class="my-row">
-            <div class="my-card bg-warning" v-for="(card, i) in cards" :key="i" >
+            <div class="my-card border" v-for="(card, i) in cards" :key="i" >
                     <img :src="card.image" alt="">
                 <div class="p-3 text-start">
                     <p class="falseTitle">
@@ -88,7 +149,7 @@ export default {
                     <hr>
                     <div class="d-flex justify-content-between align-items-center">
                         <p>
-                            <i :class="icon.cards[textLeftOne]" v-for="(icon,i) in cards[textLeftOne]" :key="i"></i>
+                            <i :class="card.textLeftOne"></i>
                             {{ card.textLeftTwo }}
                         </p>
                         <p>
