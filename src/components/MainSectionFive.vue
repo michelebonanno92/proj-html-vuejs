@@ -18,23 +18,23 @@ export default {
         {
             image : '/public/img/1.jpg',
             preTitle: ' Software Development' ,
-            title: 'Basics of Masterstudy Education Theme',
-            textLeftOne: 'fa-solid fa-star',
-            textLeftTwo: '1',
+            title: 'Basics of Masterstudy Education Theme',  
+            textCenter: '5',
             textRight: 'Free' ,
         },
         {
             image : '/public/img/2.jpg',
             preTitle: ' Art' ,
             title: 'Real Things Art Painting by Jason Ni',
-            textLeftOne:  'fa-solid fa-star' ,
-            textLeftTwo: '1',
+            crossedOutPrice: '$60.99',
+            textCenter: '5',
             textRight: '$45.99' ,
         },
         {
             image : '/public/img/7.jpg',
             preTitle: ' Art' ,
             title: 'Minimalism, How to make things simpler',
+            crossedOutPrice: '$79.99',
             textLeftOne: ' fa-regular fa-clock ',
             textLeftTwo: '5 hours',
             textRight: '$39.99' ,
@@ -43,8 +43,8 @@ export default {
             image :  '/public/img/4.jpeg',
             preTitle: ' Electronic' ,
             title: 'Hoe to be a DJ? Make electronic Music',
-            textLeftOne: 'fa-solid fa-star',
-            textLeftTwo: '1',
+            crossedOutPrice: '$59.99',
+            textCenter: '5',
             textRight: '$49.99' ,
         },
         {
@@ -53,7 +53,6 @@ export default {
             title: 'Graohic Design Basics Masterclass',
             textLeftOne: ' fa-regular fa-clock ',
             textLeftTwo: '8 hours',
-            textRight: '' ,
         },
         {
             image : '/public/img/6.jpeg',
@@ -67,14 +66,16 @@ export default {
             image : '/public/img/7.jpg',
             preTitle: ' Art' ,
             title: 'Interior design concepts Msterclass',
+            crossedOutPrice: '$69.99',
             textLeftOne: ' fa-regular fa-clock ',
             textLeftTwo: '11 hours',
-            textRight: '39.99' ,
+            textRight: '$39.99' ,
         },
         {
             image : '/public/img/8.jpeg',
             preTitle: ' Bicycling' ,
             title: 'Road Bike Manual or How to Be a Champion',
+            crossedOutPrice: '$19.99',
             textLeftOne: ' fa-regular fa-clock ',
             textLeftTwo: '13 hours',
             textRight: '$12.99' ,
@@ -83,6 +84,7 @@ export default {
             image : '/public/img/9.jpg',
             preTitle: ' Documentary' ,
             title: 'How to Make Beautiful Landscape photos?',
+            crossedOutPrice: '$59.99',
             textLeftOne: ' fa-regular fa-clock ',
             textLeftTwo: '15 hours',
             textRight: '$39.99' ,
@@ -91,6 +93,7 @@ export default {
             image : '/public/img/10.jpg',
             preTitle: ' Art' ,
             title: "Let's paint Van Gogh's Starry Night",
+            crossedOutPrice: '$79.99',
             textLeftOne: ' fa-regular fa-clock ',
             textLeftTwo: '8 hours',
             textRight: '$42.99' ,
@@ -107,8 +110,8 @@ export default {
             image : '/public/img/5.jpeg',
             preTitle: ' Fashion' ,
             title: 'Fashion Photography from professional',
-            textLeftOne: ' fa-regular fa-clock ',
-            textLeftTwo: '',
+            crossedOutPrice: '$49.99',
+            textCenter: '5',
             textRight: '$29.99' ,
         },
         
@@ -143,14 +146,20 @@ export default {
                     <p class="falseTitle">
                       {{card.preTitle}}
                     </p>
-                    <a href="#">
+                    <a href="#" @click.prevent>
                         {{card.title}}
                     </a>
                     <hr>
+                    <div class="d-flex justify-content-end crossedOutPrice">
+                       <s> {{ card.crossedOutPrice }} </s>
+                    </div>
                     <div class="d-flex justify-content-between align-items-center">
                         <p>
                             <i :class="card.textLeftOne"></i>
-                            {{ card.textLeftTwo }}
+                            {{ card. textLeftTwo }}
+                        </p>
+                        <p>
+                            {{card.textCenter}} 
                         </p>
                         <p>
                             <strong> 
@@ -197,6 +206,10 @@ export default {
      opacity: 0.4;
   }p{
     font-size: 0.8rem;
+  }.crossedOutPrice{
+    font-size: 0.7rem;
+    opacity: 0.5;
+    height: 10px;
   }
 
 </style>
