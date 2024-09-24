@@ -2,7 +2,7 @@
 export default {
   data() {
     return { 
-      listNameNav: [
+      listLink: [
         'Courser',
         'Zoom',
         'Pages',
@@ -45,7 +45,7 @@ export default {
       <div class="d-flex align-items-center"> 
         
         <ul class="d-flex ">
-          <li v-for="(element, i) in listNameNav" :key="i" class="me-3" >
+          <li v-for="(element, i) in listLink" :key="i" class="me-3" >
             <a href="#">
               {{ element }} 
             </a>

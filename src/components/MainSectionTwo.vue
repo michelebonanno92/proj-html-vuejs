@@ -13,7 +13,7 @@ export default {
 </script>
 
 <template>
-  <div class="container">
+  <div class="container margin-right">
     <div class="my-row padding">
       <div class="myCol30  p-4">
         <i class="fa-solid fa-earth-americas"></i>
@@ -70,5 +70,7 @@ export default {
   display: flex;
   flex-wrap: wrap;
   width: 1100px;
+}.margin-right{
+  margin-right: 200px;
 }
 </style>

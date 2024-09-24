@@ -13,8 +13,8 @@ export default {
 </script>
 
 <template>
-  <div class="container">
-    <div class="d-flex row padding">
+  <div class="container margin-right">
+    <div class="d-flex justify-content-center align-items-center row padding">
 
       <div class="col-7 margin-top">
         <p class="h2f">
@@ -31,7 +31,7 @@ export default {
       </div>
 
       <div class="col-5">
-        <img src="/public/img/base.png" alt="base">
+        <img src="/img/base.png" alt="base">
       </div>
      
     </div>
@@ -53,6 +53,7 @@ export default {
   max-width: 100%;
 }.margin-top{
   margin-top: 80px;
+}.margin-right{
+  margin-right: 200px;
 }
-
 </style>

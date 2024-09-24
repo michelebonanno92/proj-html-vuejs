@@ -1,13 +1,5 @@
 @use 'variables' as *;
 
-@mixin default-color {
-    color: $mainColor;
-}
-
-@mixin default-bg-color {
-    background-color: $mainColor;
-}
-
 @mixin buttonBlue {
     background-color: $blueColor;
     border: none;
@@ -24,5 +16,8 @@
   margin-top: 60px;
 }
 
+@mixin textSection {
+    font-size: 3.3rem;
+  }
 
 

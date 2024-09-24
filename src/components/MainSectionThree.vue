@@ -12,16 +12,16 @@ export default {
 </script>
 
 <template>
-    <div class="container">
+    <div class="container margin-right">
       <!-- img link -->
       <div class="my-row padding mt-5">
         <div class="myCol60 ">
-          <img src="/public/img/cat_1-770x375.jpg" alt="foto-1">
+          <img src="/img/cat_1-770x375.jpg" alt="foto-1">
         </div>
 
         <div class="myCol30">
           <div>
-            <img src="/public/img/cat_2-370x155.jpg" alt="foto-2">
+            <img src="/img/cat_2-370x155.jpg" alt="foto-2">
             <div>
               <div class="d-flex justify-content-between align-items-center mt-1">
                 <div>
@@ -39,7 +39,7 @@ export default {
             </div>
           </div>
           <div class="mt-3">
-            <img src="/public/img/cat_3-370x155.jpg" alt="foto-3">
+            <img src="/img/cat_3-370x155.jpg" alt="foto-3">
           </div>
         </div>
         
@@ -79,8 +79,8 @@ export default {
       <!-- foto 4 -->
       <div class="my-row padding mt-4">
         <div class="myCol30">
-          <img src="/public/img/cat_5-370x155.jpg" alt="foto-4">
-          <div class="d-flex justify-content-between align-items-center">
+          <img src="/img/cat_5-370x155.jpg" alt="foto-4">
+          <div class="d-flex justify-content-between align-items-center mt-2">
             <div>
               <a href="#" @click.prevent>
                 Music
@@ -95,8 +95,8 @@ export default {
       </div>
       <!-- foto 5 -->
       <div class="myCol30">
-        <img src="/public/img/cat_4-370x155.jpg" alt="foto-5">
-        <div class="d-flex justify-content-between align-items-center">
+        <img src="/img/cat_4-370x155.jpg" alt="foto-5">
+        <div class="d-flex justify-content-between align-items-center mt-2">
             <div>
               <a href="#" @click.prevent>
                 Exsercise
@@ -111,8 +111,8 @@ export default {
       </div>
       <!-- foto 6 -->
       <div class="myCol30">
-          <img src="/public/img/cat_6-370x155.jpg" alt="foto-6">
-          <div class="d-flex justify-content-between align-items-center">
+          <img src="/img/cat_6-370x155.jpg" alt="foto-6">
+          <div class="d-flex justify-content-between align-items-center mt-2">
             <div>
               <a href="#" @click.prevent>
                 Photography
@@ -158,5 +158,7 @@ export default {
   color: black;
 }.opacity{
   opacity: 0.7;
+}.margin-right{
+  margin-right: 200px;
 }
 </style>
