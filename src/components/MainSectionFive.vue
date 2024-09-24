@@ -13,6 +13,48 @@ export default {
         'Photography',
         'Software Development',
       ],
+
+      cards: [
+        {
+            image : '/public/img/1photo-1461749280684-dccba630e2f6-272x161.jpeg',
+            preTitle: ' Apache' ,
+            title: 'Web coding and Apache Basics',
+            textLeftOne: [
+                ' fa-regular fa-clock ',
+            ],
+            textLeftTwo: '6 hours',
+            textRight: 'Free' ,
+        },
+        {
+            image : '/public/img/1photo-1461749280684-dccba630e2f6-272x161.jpeg',
+            preTitle: ' Apache' ,
+            title: 'Web coding and Apache Basics',
+            textLeftOne: [
+                'fa-solid fa-star',
+                'fa-solid fa-star',
+                'fa-solid fa-star',
+                'fa-solid fa-star',
+                'fa-solid fa-star',
+            ],
+            textLeftTwo: '5',
+            textRight: 'Free' ,
+        },
+        {
+            image : '/public/img/1photo-1461749280684-dccba630e2f6-272x161.jpeg',
+            preTitle: ' Apache' ,
+            title: 'Web coding and Apache Basics',
+            textLeftOne: [
+                ' fa-regular fa-clock ',
+            ],
+            textLeftTwo: '6 hours',
+            textRight: 'Free' ,
+        },
+        
+        
+        ],
+        
+
+      
     }
   },
    components: {
@@ -34,8 +76,30 @@ export default {
           </li>
         </ul>
         <div class="my-row">
-            <div class="my-card bg-warning" v-for="(card, i) in 12" :key="i" >
-                CARD
+            <div class="my-card bg-warning" v-for="(card, i) in cards" :key="i" >
+                    <img :src="card.image" alt="">
+                <div class="p-3 text-start">
+                    <p class="falseTitle">
+                      {{card.preTitle}}
+                    </p>
+                    <a href="#">
+                        {{card.title}}
+                    </a>
+                    <hr>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p>
+                            <i :class="icon.cards[textLeftOne]" v-for="(icon,i) in cards[textLeftOne]" :key="i"></i>
+                            {{ card.textLeftTwo }}
+                        </p>
+                        <p>
+                            <strong> 
+                                {{card.textRight}}
+                            </strong>
+                        </p>
+                      
+                    </div>
+                
+                </div>
             </div>
            
           
@@ -58,13 +122,20 @@ export default {
   }.my-row{
     display: flex;
     flex-wrap: wrap;
-  }
-  .my-card{
+  }.my-card{
     width: calc((100% / 6) - 20px );
     height: 300px;
     margin-bottom: 30px;
     margin-left: 10px;
     margin-right: 10px;
+  }.my-card a{
+    color: black;
+  }img{
+    max-width: 100%;
+  }.falseTitle{
+     opacity: 0.4;
+  }p{
+    font-size: 0.8rem;
   }
 
 </style>
