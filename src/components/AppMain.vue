@@ -4,6 +4,7 @@ import MainSectionTwo from './MainSectionTwo.vue';
 import MainSectionThree from './MainSectionThree.vue';
 import MainSectionFour from './MainSectionFour.vue';
 import MainSectionFive from './MainSectionFive.vue';
+import MainSectionSix from './MainSectionSix.vue';
 
 
 
@@ -24,6 +25,8 @@ export default {
     MainSectionThree,
     MainSectionFour,
     MainSectionFive,
+    MainSectionSix,
+
 
     
   },
@@ -37,6 +40,7 @@ export default {
     <MainSectionThree />
     <MainSectionFour />
     <MainSectionFive />
+    <MainSectionSix />
 
     
 
