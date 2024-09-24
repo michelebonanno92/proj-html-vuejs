@@ -19,7 +19,7 @@ export default {
       <nav>
         <!-- logo -->
         <div>
-          <img src="/img/logo.png" alt="logo" class="me-4">
+          <img src="/public/img/MasterStudy_logo.svg" alt="logo" class="me-4">
         </div>
 
         <!-- search bar + category -->

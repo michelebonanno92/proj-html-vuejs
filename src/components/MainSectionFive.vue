@@ -4,6 +4,15 @@ export default {
   data() {
     return { 
      titleSection: "Recent courses",
+     listLink: [
+        'All Categories',
+        'Art',
+        'Exercise',
+        'Material Design',
+        'Music',
+        'Photography',
+        'Software Development',
+      ],
     }
   },
    components: {
@@ -17,11 +26,13 @@ export default {
       <p class="textSection mt-5">
         {{ titleSection }}
       </p>
-      <ul>
-        <li>
-
-        </li>
-      </ul>
+      <ul class="d-flex align-items-center justify-content-center">
+          <li v-for="(link, i) in listLink" :key="i" class="me-5 mt-3" >
+            <a href="#" @click.prevent>
+              {{ link }} 
+            </a>
+          </li>
+        </ul>
   </div>
 </template>
 
@@ -32,6 +43,8 @@ export default {
   @include textSection
 }li{
     list-style-type: none;
+  }a{
+    text-decoration: none;
   }
 
 </style>

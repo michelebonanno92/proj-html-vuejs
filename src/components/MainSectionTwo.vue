@@ -71,6 +71,6 @@ export default {
   flex-wrap: wrap;
   width: 1100px;
 }.margin-right{
-  margin-right: 200px;
+  @include margin-right;
 }
 </style>

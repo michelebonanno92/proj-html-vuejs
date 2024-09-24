@@ -54,6 +54,6 @@ export default {
 }.margin-top{
   margin-top: 80px;
 }.margin-right{
-  margin-right: 200px;
+  @include margin-right;
 }
 </style>

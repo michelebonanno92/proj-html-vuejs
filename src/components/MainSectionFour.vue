@@ -43,7 +43,7 @@ export default {
 .padding{
   padding: 100px;
 }p{
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }.textSection{
  @include textSection
 }.buttonBlue{
@@ -55,7 +55,7 @@ export default {
   background-repeat: no-repeat;
   background-position:center
 }.margin-right{
-  margin-right: 200px;
+  @include margin-right;
 }
 
 </style>

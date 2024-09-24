@@ -45,9 +45,9 @@ export default {
       <div class="d-flex align-items-center"> 
         
         <ul class="d-flex ">
-          <li v-for="(element, i) in listLink" :key="i" class="me-3" >
+          <li v-for="(link, i) in listLink" :key="i" class="me-3" >
             <a href="#">
-              {{ element }} 
+              {{ link }} 
             </a>
           </li>
         </ul>

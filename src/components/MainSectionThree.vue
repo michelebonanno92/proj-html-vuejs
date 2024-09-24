@@ -159,6 +159,6 @@ export default {
 }.opacity{
   opacity: 0.7;
 }.margin-right{
-  margin-right: 200px;
+  @include margin-right;
 }
 </style>
