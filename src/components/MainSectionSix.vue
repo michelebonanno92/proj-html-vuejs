@@ -1,5 +1,5 @@
 <script>
-import AppButton from './AppButton.vue';
+import AppSearchBar from './AppSearchBar.vue';
 export default {
   data() {
     return { 
@@ -26,7 +26,7 @@ export default {
     }
   },
    components: {
-  
+    AppSearchBar,
   },
 }
 </script>
@@ -54,8 +54,28 @@ export default {
         
     </div>
   </div>
-  <div class="container-fluid">
-    ciao
+  <div class="container-fluid backcolor d-flex justify-content-center align-items-center">
+    <div class="my-row">
+        <div >
+            <p>
+                <strong>
+                    Subscribe our newsletter
+                </strong> 
+            </p>
+            <p>
+                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words
+            </p>
+        </div>
+        <div >
+            <p>
+                YOUR E-MAIL ADDRESS
+            </p>
+            <div>
+                <AppSearchBar />
+            </div>
+        </div>
+    </div>
+  
   </div>
 </template>
 
@@ -87,5 +107,9 @@ export default {
 }.text-font{
     font-size: 0.8rem;
     opacity: 0.5;
+}.backcolor{
+    background-color: #4ED7A8;
+    color: white;
+    height: 180px;
 }
 </style>
