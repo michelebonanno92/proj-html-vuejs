@@ -1,5 +1,5 @@
 <script>
-
+import AppButton from './AppButton.vue';
 export default {
   data() {
     return { 
@@ -122,7 +122,7 @@ export default {
     }
   },
    components: {
-  
+    AppButton,
   },
 }
 </script>
@@ -173,6 +173,9 @@ export default {
             </div>
            
           
+        </div>
+        <div>
+            <AppButton />
         </div>
    
      
