@@ -13,7 +13,7 @@ export default {
 
 <template>
   <div class="container-fluid backImg">
-    <div class="box speech-bubble-right speech-bubble">
+    <div class="box">
       <h3 class="titleFont">
         Come as you are
       </h3>
@@ -59,22 +59,22 @@ export default {
     font-size: 1.2rem;
   }
   
-  .speech-bubble-right:after {
-  border-left-color: #B9B0A7;
-  left: 100%;
-  top: 50%;
-  margin-top: -15px;
-}
-.speech-bubble:after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 0;
-  border: 15px solid;
-  color: white;
-}
+//   .speech-bubble-right:after {
+//   border-left-color: #B9B0A7;
+//   left: 100%;
+//   top: 50%;
+//   margin-top: -15px;
+// }
+// .speech-bubble:after {
+//   content: '';
+//   position: absolute;
+//   width: 0;
+//   height: 0;
+//   border: 15px solid;
+//   color: white;
+// }
 
-.speech-bubble{
-  position: relative;
-}
+// .speech-bubble{
+//   position: relative;
+// }
 </style>
