@@ -21,7 +21,7 @@ export default {
 
 <template>
   <Footer class="d-flex">
-    <div class="container-xxl d-flex justify-content-between mt-5 ">
+    <div class="container-xxl d-flex justify-content-between mt-5 paddingContainer">
         <!-- About -->
         <div>
             <h5>
@@ -208,5 +208,7 @@ footer{
     width: 150px;
     font-size: small;
     margin-left: 10px;
+}.paddingContainer{
+    padding: 0 80px;
 }
 </style>
